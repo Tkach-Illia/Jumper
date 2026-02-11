@@ -6,7 +6,10 @@
 [node name="Main" type="Node2D" unique_id=766341076]
 
 [node name="Player" parent="." unique_id=679550238 instance=ExtResource("1_o5qli")]
-position = Vector2(324, 59)
+position = Vector2(324, 310)
 
 [node name="Platform" parent="." unique_id=2136448726 instance=ExtResource("2_0wfyh")]
-position = Vector2(326, 121)
+position = Vector2(326, 372)
+left_offset = -100.0
+right_offset = 100.0
+speed = 0.5
