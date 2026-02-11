@@ -7,7 +7,7 @@ extends AnimatableBody2D
 @export var speed: float = .1
 
 var direction: bool = true
-var pos: float = .0
+var pos: float = .5
 var starting_pos: Vector2 = Vector2(0, 0)
 
 func _ready() -> void:
@@ -26,4 +26,4 @@ func _process(delta: float) -> void:
 		direction = true
 		
 	print(curve.sample(pos))
-	global_position.x = (abs(right_offset) + abs(left_offset)) * curve.sample(pos) + starting_pos.x
+	global_position.x = (abs(right_offset) + abs(left_offset)) * curve.sample(pos) + starting_pos.x + left_offset

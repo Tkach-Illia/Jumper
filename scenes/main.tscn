@@ -2,14 +2,24 @@
 
 [ext_resource type="PackedScene" uid="uid://duwe6fa61clrj" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://die1qs0mqlq3l" path="res://scenes/platform.tscn" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://dqbxqvbrjfycu" path="res://scripts/camera_2d.gd" id="3_sugp2"]
 
 [node name="Main" type="Node2D" unique_id=766341076]
 
 [node name="Player" parent="." unique_id=679550238 instance=ExtResource("1_o5qli")]
-position = Vector2(324, 310)
+position = Vector2(-3, 224)
 
 [node name="Platform" parent="." unique_id=2136448726 instance=ExtResource("2_0wfyh")]
-position = Vector2(326, 372)
-left_offset = -100.0
-right_offset = 100.0
-speed = 0.5
+position = Vector2(-1, 385)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=998302395 node_paths=PackedStringArray("player")]
+script = ExtResource("3_sugp2")
+player = NodePath("../Player")
+dead_zone_radius = 200.0
+vert_offset = 100.0
+
+[node name="Platform2" parent="." unique_id=982052082 instance=ExtResource("2_0wfyh")]
+position = Vector2(-133, 251)
+
+[node name="Platform3" parent="." unique_id=1266106106 instance=ExtResource("2_0wfyh")]
+position = Vector2(-231, 125)

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://lvx1e504skrm"]
+
+[ext_resource type="Script" uid="uid://745goidf2q8v" path="res://scripts/platform.gd" id="1_n142o"]
+[ext_resource type="Texture2D" uid="uid://d2jrpu2nmkqp8" path="res://icon.svg" id="2_jq327"]
+
+[sub_resource type="Curve" id="Curve_nlgqw"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nlgqw"]
+
+[node name="Platform" type="AnimatableBody2D" unique_id=982052082]
+script = ExtResource("1_n142o")
+curve = SubResource("Curve_nlgqw")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=983071158]
+scale = Vector2(0.79, 0.18)
+texture = ExtResource("2_jq327")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=883706862]
+scale = Vector2(5, 1)
+shape = SubResource("RectangleShape2D_nlgqw")
