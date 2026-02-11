@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
 
-[node name="Player" type="CharacterBody2D" unique_id=679550238]
+[node name="Player" type="CharacterBody2D" unique_id=679550238 groups=["Player"]]
 script = ExtResource("1_g2els")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=171642449]

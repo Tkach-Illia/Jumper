@@ -15,10 +15,18 @@ run/main_scene="uid://dwjeb21j6w0iw"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+EventBus="*uid://dse3jieh3nbqe"
+
 [display]
 
 window/size/viewport_width=720
 window/size/viewport_height=916
+
+[global_group]
+
+Player=""
 
 [physics]
 
