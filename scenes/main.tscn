@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://t1ami8v6frnx" path="res://scripts/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://duwe6fa61clrj" path="res://scenes/player.tscn" id="1_o5qli"]
-[ext_resource type="PackedScene" uid="uid://die1qs0mqlq3l" path="res://scenes/platform.tscn" id="2_0wfyh"]
+[ext_resource type="PackedScene" uid="uid://lvx1e504skrm" path="res://scenes/platform.tscn" id="2_0wfyh"]
 [ext_resource type="Script" uid="uid://dqbxqvbrjfycu" path="res://scripts/camera_2d.gd" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://yxjntc704nil" path="res://scenes/coin.tscn" id="5_tbgi4"]
 
@@ -50,6 +50,9 @@ position = Vector2(-231, 125)
 
 [node name="Platform4" parent="." unique_id=851990071 instance=ExtResource("2_0wfyh")]
 position = Vector2(-8, -16)
+
+[node name="Platform4" parent="Platform4" unique_id=117923773 instance=ExtResource("2_0wfyh")]
+position = Vector2(1, -159)
 
 [node name="Coin" parent="." unique_id=427324244 instance=ExtResource("5_tbgi4")]
 position = Vector2(-190, 56)
